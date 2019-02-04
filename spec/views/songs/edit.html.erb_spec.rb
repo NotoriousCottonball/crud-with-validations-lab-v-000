@@ -14,7 +14,7 @@ RSpec.describe 'songs/edit', type: :feature do
   it 'renders the edit song form' do
     visit edit_song_path(song)
 
-    form = first[form]
+    form = first[:form]
 
     expect(form[:action]).to eq(song_path(song))
     expect(form.find('input#song_title').value).to eq(song.title)
