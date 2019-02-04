@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+
 gem 'jquery-rails'
 gem 'rails', '~> 4.2'
 gem 'sqlite3'
