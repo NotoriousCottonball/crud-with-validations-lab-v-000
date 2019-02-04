@@ -1,10 +1,11 @@
 <h1>Editing: <%= @song.title %> by <%= @song.artist_name %></h1>
 
 <%= render 'form' %>
-<div>
+
+<p></p>
 <%= link_to "Cancel", @song %>
 <%= link_to "Delete", @song, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
+
 
 <div>
 <%= button_to "Cancel", @song, method: :get, data: { disable_with: 'Canceling' } %>
